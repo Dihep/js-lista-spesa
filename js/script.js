@@ -3,8 +3,10 @@ var listaSpesa = ["Nutella", "Marmellata", "Pane", "Pasta", "Sugo", "Maionese", 
 const lista = document.querySelector("ul");
 
 //Ciclo di stampa
-for (let i = 0; i < listaSpesa.length; i++) {
+let i = 0;
+while ( i < listaSpesa.length) {
     const newItem = document.createElement("li");
     newItem.innerText = listaSpesa[i];
     lista.append(newItem);
+    i++;
 };
